@@ -49,23 +49,23 @@ function Bio() {
 }
 
 const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        social {
-          twitter
-        }
+query BioQuery {
+  avatar: file(absolutePath: { regex: "uploads/gatsby-icon.png/" }) {
+    childImageSharp {
+      fixed(width: 50, height: 50) {
+        ...GatsbyImageSharpFixed
       }
     }
   }
+  site {
+    siteMetadata {
+      author
+      social {
+        twitter
+      }
+    }
+  }
+}
 `
 
 const Container = styled.div`

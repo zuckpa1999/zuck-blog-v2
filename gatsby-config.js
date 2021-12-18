@@ -21,7 +21,7 @@ module.exports = {
       options: {
         name: "blog",
         engine: "flexsearch",
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/content/blog/images/uploads`,
         engineOptions: {
           encode: "icase",
           tokenize: "forward",
