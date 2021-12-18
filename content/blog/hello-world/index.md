@@ -1,7 +1,7 @@
 ---
 title: Hello Worsld
 date: "2015-05-01T22:12:03.284Z"
-featuredImage: ./salty_egg.jpg
+featuredImage: ../images/uploads/gatsby123.png
 ---
 
 This is my first post on my new fake blog! How exciting!
