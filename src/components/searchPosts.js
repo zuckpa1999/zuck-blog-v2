@@ -5,7 +5,7 @@ import { useFlexSearch } from "react-use-flexsearch"
 import * as queryString from "query-string"
 
 import { rhythm } from "../utils/typography"
-
+import Img from "gatsby-image"
 const SearchBar = styled.div`
   display: flex;
   border: 1px solid #dfe1e5;
@@ -41,6 +41,7 @@ const SearchBar = styled.div`
   }
 `
 
+// let featuredImgFluid
 const SearchedPosts = ({ results }) =>
   results.length > 0 ? (
     results.map(node => {
@@ -49,7 +50,8 @@ const SearchedPosts = ({ results }) =>
       const description = node.description
       const excerpt = node.excerpt
       const slug = node.slug
-
+    //  let post = data.markdownRemark
+    //  featuredImgFluid = results.post.frontmatter.featuredImage.childImageSharp.fluid
       return (
         <div key={slug}>
           <h3
@@ -91,6 +93,8 @@ const AllPosts = ({ posts }) => (
               {title}
             </Link>
           </h3>
+          <h1>ccs</h1>
+          <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
           <small>{node.frontmatter.date}</small>
           <p
             dangerouslySetInnerHTML={{

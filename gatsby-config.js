@@ -21,6 +21,7 @@ module.exports = {
       options: {
         name: "blog",
         engine: "flexsearch",
+        path: `${__dirname}/content/assets`,
         engineOptions: {
           encode: "icase",
           tokenize: "forward",
@@ -38,6 +39,8 @@ module.exports = {
                   title
                   description
                   date(formatString: "MMMM DD, YYYY")
+                  
+
                 }
               }
             }
