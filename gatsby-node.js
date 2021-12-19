@@ -45,10 +45,10 @@ exports.createPages = ({ graphql, actions }) => {
           previous,
           next,
         },
-        fromPath: `/`,
-        toPath: `/blog`,
-        redirectInBrowser: true,
-        isPermanent: true,
+        // fromPath: `/`,
+        // toPath: `/blog/`,
+        // redirectInBrowser: true,
+        // isPermanent: true,
       })
     })
 
