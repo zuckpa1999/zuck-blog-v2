@@ -34,11 +34,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>, a framework built upon the
-              React library.
+              Barameerak Koonmongkon, Full-time software engineer, part-time data analyst
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Follow me on Twitter
+              <a href={`https://github.com/zuckpa1999?tab=repositories`}>
+                Follow me on Github
               </a>
             </p>
           </Container>
@@ -50,9 +49,9 @@ function Bio() {
 
 const bioQuery = graphql`
 query BioQuery {
-  avatar: file(absolutePath: { regex: "uploads/gatsby-icon.png/" }) {
+  avatar: file(absolutePath: { regex: "uploads/IMG_1162.jpeg/" }) {
     childImageSharp {
-      fixed(width: 50, height: 50) {
+      fixed(width: 79, height: 72) {
         ...GatsbyImageSharpFixed
       }
     }

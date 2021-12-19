@@ -93,7 +93,13 @@ const AllPosts = ({ posts }) => (
               {title}
             </Link>
           </h3>
-          <h1>ccs</h1>
+          <h1>
+          He
+          </h1>
+          <p>ss</p>
+          <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
           <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
           <small>{node.frontmatter.date}</small>
           <p
@@ -119,7 +125,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
 
   return (
     <>
-      <SearchBar>
+      {/* <SearchBar>
         <svg
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +145,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
             setQuery(e.target.value)
           }}
         />
-      </SearchBar>
+      </SearchBar> */}
       {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />}
     </>
   )

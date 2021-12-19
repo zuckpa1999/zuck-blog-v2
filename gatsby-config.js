@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
+    // title: `Gatsby Starter Personal Blog`,
+    author: `zuck_pa`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
@@ -60,6 +60,7 @@ module.exports = {
             date: node.frontmatter.date,
           })),
       },
+      
     },
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-root-import`,
@@ -133,5 +134,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-postcss`
   ],
 }
