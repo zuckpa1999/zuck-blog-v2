@@ -83,30 +83,28 @@ const AllPosts = ({ posts }) => (
     {posts.map(({ node }) => {
       const title = node.frontmatter.title || node.fields.slug
       return (
-        <div key={node.fields.slug}>
+        <div key={node.fields.slug} className="mb-10">
+           <Link to={`/blog${node.fields.slug}`}>
           <h3
             style={{
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
+            {/* className="text-3xl font-bold underline" */}
+            <Link  className="text-2xl font-bold shadow-sm" to={`/blog${node.fields.slug}`}>
               {title}
             </Link>
           </h3>
-          <h1>
-          He
-          </h1>
-          <p>ss</p>
-          <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+       
           <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
           <small>{node.frontmatter.date}</small>
-          <p
+          {/* className="text-3xl font-bold underline" */}
+          <p className="text-base"
             dangerouslySetInnerHTML={{
               __html: node.frontmatter.description || node.excerpt,
             }}
           />
+      </Link>
         </div>
       )
     })}

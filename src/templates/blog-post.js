@@ -1,11 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-
+import { MDXProvider } from "@mdx-js/react";
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/header";
 import { rhythm, scale } from "../utils/typography"
+// import './testcss.css'
+
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,25 +22,32 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <Header/>
+        {/* styling top part of the blog */}
+        <h1 style={{ fontSize: 40, fontWeight:"bold"}}>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
+            // ...scale(-1 / 25),
+            fontSize: 20,
             display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginBottom: rhythm(2),
+            // marginTop: rhythm(-),
           }}
         >
           {post.frontmatter.date}
         </p>
+        {/* <h1>blabla</h1> */}
+        <div> 
         <MDXRenderer>{post.body}</MDXRenderer>
+        </div>
+        {/* <h1>blabla</h1> */}
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
         <Bio />
-
+       
         <ul
           style={{
             display: `flex`,

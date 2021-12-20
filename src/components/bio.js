@@ -9,7 +9,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
-
+// import '../styles/global.css'
 import { rhythm } from "../utils/typography"
 
 function Bio() {
@@ -49,9 +49,9 @@ function Bio() {
 
 const bioQuery = graphql`
 query BioQuery {
-  avatar: file(absolutePath: { regex: "uploads/IMG_1162.jpeg/" }) {
+  avatar: file(absolutePath: { regex: "uploads/IMG_0759.jpeg/" }) {
     childImageSharp {
-      fixed(width: 79, height: 72) {
+      fixed(width: 79, height: 62) {
         ...GatsbyImageSharpFixed
       }
     }

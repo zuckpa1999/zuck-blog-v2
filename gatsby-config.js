@@ -47,7 +47,7 @@ module.exports = {
           }
         `,
         ref: "id",
-        index: ["title", "rawBody"],
+        index: ["title", "rawBody"], 
         store: ["id", "slug", "date", "title", "excerpt", "description"],
         normalizer: ({ data }) =>
           data.allMdx.nodes.map(node => ({
@@ -134,6 +134,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
   ],
 }
