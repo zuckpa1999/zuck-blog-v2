@@ -22,7 +22,9 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <div className="mt-11">
         <Header/>
+        </div>
         {/* styling top part of the blog */}
         <h1 style={{ fontSize: 40, fontWeight:"bold"}}>{post.frontmatter.title}</h1>
         <p
