@@ -2,7 +2,7 @@ backend:
   name: github
   repo: zuckpa1999/zuck-blog-v2
 
-media_folder: "./images/uploads/"
+media_folder: "content/blog/images/uploads"
 public_folder: ../assetss
 
 collections:
