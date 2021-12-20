@@ -66,7 +66,7 @@ class Layout extends React.Component {
           }}
         >
       
-          <header>{header}</header>
+          {/* <header>{header}</header> */}
   
           <main>{children}</main>
       
