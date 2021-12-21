@@ -106,7 +106,7 @@ const AllPosts = ({ posts }) => (
         //     />
         // </Link>
         //   </div>
-        <div class="max-w-full rounded overflow-hidden shadow hover:shadow-lg mt-10 border">
+        <div class="max-w-full rounded overflow-hidden shadow hover:shadow-lg mt-10 ">
           <Link to={`/blog${node.fields.slug}`}>
             <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <div class="px-6 py-4">
