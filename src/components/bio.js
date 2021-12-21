@@ -35,10 +35,6 @@ function Bio() {
             />
             <p>
               Barameerak Koonmongkon, Full-time software engineer, Part-time data analyst
-              {` `}
-              <a href={`https://github.com/zuckpa1999?tab=repositories`}>
-                Follow me on Github
-              </a>
             </p>
           </Container>
         )
