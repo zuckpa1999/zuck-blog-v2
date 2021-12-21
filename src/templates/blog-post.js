@@ -1,12 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { MDXProvider } from "@mdx-js/react";
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header";
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 // import './testcss.css'
 
 
@@ -23,10 +22,10 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         {/* <div className="mt-11"> */}
-        <Header/>
+        <Header />
         {/* </div> */}
         {/* styling top part of the blog */}
-        <h1 style={{ fontSize: 40, fontWeight:"bold"}}>{post.frontmatter.title}</h1>
+        <h1 style={{ fontSize: 40, fontWeight: "bold" }}>{post.frontmatter.title}</h1>
         <p
           style={{
             // ...scale(-1 / 25),
@@ -39,8 +38,8 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         {/* <h1>blabla</h1> */}
-        <div> 
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <div>
+          <MDXRenderer>{post.body}</MDXRenderer>
         </div>
         {/* <h1>blabla</h1> */}
         <hr
@@ -49,7 +48,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-       
+
         <ul
           style={{
             display: `flex`,
@@ -57,6 +56,7 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            marginTop: 30
           }}
         >
           <li>

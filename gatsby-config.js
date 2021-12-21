@@ -47,7 +47,7 @@ module.exports = {
           }
         `,
         ref: "id",
-        index: ["title", "rawBody"], 
+        index: ["title", "rawBody"],
         store: ["id", "slug", "date", "title", "excerpt", "description"],
         normalizer: ({ data }) =>
           data.allMdx.nodes.map(node => ({
@@ -60,7 +60,7 @@ module.exports = {
             date: node.frontmatter.date,
           })),
       },
-      
+
     },
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-root-import`,
@@ -122,10 +122,10 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        // theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/code.png`,
       },
     },
     {
