@@ -50,8 +50,8 @@ const SearchedPosts = ({ results }) =>
       const description = node.description
       const excerpt = node.excerpt
       const slug = node.slug
-    //  let post = data.markdownRemark
-    //  featuredImgFluid = results.post.frontmatter.featuredImage.childImageSharp.fluid
+      //  let post = data.markdownRemark
+      //  featuredImgFluid = results.post.frontmatter.featuredImage.childImageSharp.fluid
       return (
         <div key={slug}>
           <h3
@@ -83,29 +83,49 @@ const AllPosts = ({ posts }) => (
     {posts.map(({ node }) => {
       const title = node.frontmatter.title || node.fields.slug
       return (
-        <div key={node.fields.slug} className="mb-10">
-           <Link to={`/blog${node.fields.slug}`}>
-          <h3
-            style={{
-              marginBottom: rhythm(1 / 4),
-            }}
-          >
-            {/* className="text-3xl font-bold underline" */}
-            <Link  className="text-2xl font-bold shadow-sm" to={`/blog${node.fields.slug}`}>
-              {title}
-            </Link>
-          </h3>
-       
-          <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-          <small>{node.frontmatter.date}</small>
-          {/* className="text-3xl font-bold underline" */}
-          <p className="text-base"
-            dangerouslySetInnerHTML={{
-              __html: node.frontmatter.description || node.excerpt,
-            }}
-          />
-      </Link>
+        //   <div key={node.fields.slug} className="mb-10">
+        //      <Link to={`/blog${node.fields.slug}`}>
+        //     <h3
+        //       style={{
+        //         marginBottom: rhythm(1 / 4),
+        //       }}
+        //     >
+        //       {/* className="text-3xl font-bold underline" */}
+        //       <Link  className="text-2xl font-bold shadow-sm" to={`/blog${node.fields.slug}`}>
+        //         {title}
+        //       </Link>
+        //     </h3>
+
+        //     <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+        //     <small>{node.frontmatter.date}</small>
+        //     {/* className="text-3xl font-bold underline" */}
+        //     <p className="text-base"
+        //       dangerouslySetInnerHTML={{
+        //         __html: node.frontmatter.description || node.excerpt,
+        //       }}
+        //     />
+        // </Link>
+        //   </div>
+        <div class="max-w-full rounded overflow-hidden shadow-md mt-10">
+          <Link to={`/blog${node.fields.slug}`}>
+            <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-1 font-serif">{title}</div>
+              <p className="text-gray-700 text-base font-sans"
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 font-sans">#photography</span>
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 font-sans">travel</span>
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 font-sans">#winter</span>
+            </div>
+          </Link>
         </div>
+
+
       )
     })}
   </div>
