@@ -106,11 +106,11 @@ const AllPosts = ({ posts }) => (
         //     />
         // </Link>
         //   </div>
-        <div class="max-w-full rounded overflow-hidden shadow-md mt-10">
+        <div class="max-w-full rounded overflow-hidden shadow hover:shadow-lg mt-10 border">
           <Link to={`/blog${node.fields.slug}`}>
             <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <div class="px-6 py-4">
-              <div class="font-bold text-2xl mb-1 font-serif">{title}</div>
+              <div class="font-semibold text-2xl mb-1 font-serif">{title}</div>
               <p className="text-gray-700 text-base font-sans"
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,

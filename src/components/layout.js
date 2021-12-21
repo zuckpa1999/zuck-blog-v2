@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import NavBar from "./navbar"
 import { rhythm, scale } from "../utils/typography"
-
+import Social from "./social"
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -65,15 +65,16 @@ class Layout extends React.Component {
             padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
           }}
         >
-      
+
           {/* <header>{header}</header> */}
-  
+
           <main>{children}</main>
-      
+
         </div>
         <Footer>
+          <Social />
           © {new Date().getFullYear()}, zuck_pa
-        
+
         </Footer>
       </Wrapper>
     )
