@@ -110,8 +110,9 @@ const AllPosts = ({ posts }) => (
           <Link to={`/blog${node.fields.slug}`}>
             <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <div class="px-6 py-4">
-              <div class="font-semibold text-2xl mb-1 font-serif">{title}</div>
-              <p className="text-gray-700 text-base font-sans"
+              <div class="font-semibold text-2xl font-serif">{title}</div>
+              <small className="font-sans ">{node.frontmatter.date}</small>
+              <p className="text-gray-700 text-base font-sans mt-3"
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
