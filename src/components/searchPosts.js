@@ -96,11 +96,6 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
 export default SearchPosts
 
 
-// - removed purple bg notch iphone done
-// - add social links
-// - add padding footer blogpost
 // - implement tag?
-// - consider fix footer / Header
-// - rewrite Bio
 // - add color / wow factor
 // - buy domain

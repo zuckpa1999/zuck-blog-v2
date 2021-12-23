@@ -56,7 +56,7 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         {/* <h1>ss</h1> */}
-        {/* <NavBar/> */}
+        <NavBar />
         <div
           style={{
             marginLeft: `auto`,
