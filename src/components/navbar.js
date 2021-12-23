@@ -10,7 +10,7 @@ function NavBar() {
             <div className="text-center">
               {/* <div className="mb-4 sticky text-center "> */}
               <Link to={`/`}>
-                <h1 className="text-3xl font-semibold">zuck_pa;</h1>
+                <h1 className="text-3xl font-extralight font-serif">zuck_pa;</h1>
                 <p className="text-xs">The untold stories</p>
               </Link>
               {/* </div> */}
