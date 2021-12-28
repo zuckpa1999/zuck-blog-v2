@@ -33,9 +33,7 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Barameerak Koonmongkon, Full-time software engineer, Part-time data analyst
-            </p>
+            <p> Barameerak Koonmongkon, Software Engineer based in BKK Thailand.</p>
           </Container>
         )
       }}
