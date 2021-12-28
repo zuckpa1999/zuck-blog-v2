@@ -25,8 +25,8 @@ class BlogPostTemplate extends React.Component {
         <Header />
         {/* </div> */}
         {/* styling top part of the blog */}
-        <h1 style={{ fontSize: 40, fontWeight: "bold" }}>{post.frontmatter.title}</h1>
-        <p
+        <h1 className="font-light text-4xl text-center">{post.frontmatter.title}</h1>
+        {/* <p
           style={{
             // ...scale(-1 / 25),
             fontSize: 20,
@@ -34,7 +34,8 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(2),
             // marginTop: rhythm(-),
           }}
-        >
+        > */}
+        <p className="font-serif text-xs text-center font-thin">
           {post.frontmatter.date}
         </p>
         {/* <h1>blabla</h1> */}
@@ -74,7 +75,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-      </Layout>
+      </Layout >
     )
   }
 }

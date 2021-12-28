@@ -30,6 +30,7 @@ const SearchedPosts = ({ results }) =>
             </Link>
           </h3>
           <small>{date}</small>
+
           <p
             dangerouslySetInnerHTML={{
               __html: description || excerpt,
@@ -53,8 +54,8 @@ const AllPosts = ({ posts }) => (
           <Link to={`/blog${node.fields.slug}`}>
             <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <div class="px-6 py-4">
-              <div class="font-semibold text-2xl font-serif">{title}</div>
-              <small className="font-sans ">{node.frontmatter.date}</small>
+              <div class="font-medium text-2xl font-serif">{title}</div>
+              <small className="font-sans font-thin">{node.frontmatter.date}</small>
               <p className="text-gray-700 text-base font-sans mt-3"
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -62,9 +63,9 @@ const AllPosts = ({ posts }) => (
               />
             </div>
             <div class="px-6 pt-4 pb-2">
-              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 font-sans">#photography</span>
-              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 font-sans">travel</span>
-              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 font-sans">#winter</span>
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">#photography</span>
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">travel</span>
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">#winter</span>
             </div>
           </Link>
         </div>
