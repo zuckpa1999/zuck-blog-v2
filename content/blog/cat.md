@@ -12,5 +12,8 @@ tag: Technologyxzcczxc
 #### Testtt
 fasf
 fa
+![lololol](../images/uploads/gatsby123.png)
+
+
 sf<br></br>
 fasf
