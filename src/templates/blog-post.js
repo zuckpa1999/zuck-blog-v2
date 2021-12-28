@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
         <Header />
         {/* </div> */}
         {/* styling top part of the blog */}
-        <h1 className="font-light text-4xl text-center">{post.frontmatter.title}</h1>
+        <h1 className="font-normal text-4xl text-center">{post.frontmatter.title}</h1>
         {/* <p
           style={{
             // ...scale(-1 / 25),
