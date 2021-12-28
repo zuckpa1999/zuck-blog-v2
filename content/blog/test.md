@@ -4,6 +4,7 @@ title: test
 featuredImage: ./salty_egg.jpg
 path: test
 description: blabla
+tag: Technologyzblabla
 ---
  
 

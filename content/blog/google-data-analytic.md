@@ -4,6 +4,7 @@ date: 2021-12-20T18:55:34.079Z
 title: Google Data Analytic
 description: blabla
 featuredImage: ./images/uploads/google-data-analytics-professional-certificate.png
+tag: Technologyczvcxv
 ---
 ccdscscds
 

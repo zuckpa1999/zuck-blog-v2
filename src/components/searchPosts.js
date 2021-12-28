@@ -63,9 +63,11 @@ const AllPosts = ({ posts }) => (
               />
             </div>
             <div class="px-6 pt-4 pb-2">
-              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">#photography</span>
+              {/* <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">#photography</span>
               <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">travel</span>
-              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">#winter</span>
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">#winter</span> */}
+              <span className="inline-block border border-gray-400 hover:border-gray-900 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-2 font-sans">{node.frontmatter.tag}
+              </span>
             </div>
           </Link>
         </div>
