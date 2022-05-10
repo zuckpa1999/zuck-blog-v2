@@ -4,7 +4,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header";
 import { rhythm } from "../utils/typography"
 // import './testcss.css'
 
@@ -22,7 +21,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         {/* <div className="mt-11"> */}
-        <Header />
+        {/* <Header /> */}
         {/* </div> */}
         {/* styling top part of the blog */}
         <h1 className="font-normal text-4xl text-center">{post.frontmatter.title}</h1>

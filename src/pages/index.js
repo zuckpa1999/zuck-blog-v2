@@ -4,7 +4,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SearchPosts from "../components/searchPosts"
-import Header from "../components/header"
 import "typeface-montserrat"
 
 class Blog extends React.Component {
@@ -20,10 +19,7 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        {/* <NavBar/> */}
         <SEO title="All posts" />
-        {/* <Header/> */}
-        <Header />
 
 
         <SearchPosts
