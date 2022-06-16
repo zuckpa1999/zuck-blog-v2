@@ -4,7 +4,7 @@ date: 2022-06-16T09:33:27.144Z
 title: "Recap: How I landed my 1st dev job in Thailand."
 description: A 3-months journey of how I finally landed my full-time developer
   position in Thailand.
-featuredImage: content/blog/images/uploads/d48482b0-fbfb-4462-aec9-6d663f9d9837_1_105_c.jpeg
+featuredImage: ./images/uploads/d48482b0-fbfb-4462-aec9-6d663f9d9837_1_105_c.jpeg
 tag: Technology
 ---
 **Hi! I'm currently a full-stack developer working in Thailand for almost a year.** I went through a 2-3 months search for a developer/software engineer role a few months before I finished my bachelor's. The process was quite frustrating and lengthy, but that's probably because I wanted to ensure my priorities aligned with the job. Hence, I want to write this post to help anyone looking to land an entry-level developer role in Thailand and to provide my perspective regarding some misconceptions people might have during the job hunting/searching. Moreover, another purpose is for me to document/ reflect on how I did throughout the process. 
