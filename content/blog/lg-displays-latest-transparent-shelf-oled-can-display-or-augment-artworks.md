@@ -3,7 +3,7 @@ path: LG Display's latest transparent 'shelf' OLED can display or augment artwor
 date: 2021-12-28T08:28:05.574Z
 title: LG Display's latest transparent 'shelf' OLED can display or augment artworks
 description: Another model can apply 'VFX' to enhance department store product displays.
-featuredImage: ./images/uploads/img_0824.jpg
+featuredImage: ./images/uploads/comp.jpeg
 tag: University
 ---
 fsdmfkldsfmlksdzf fsdf
